@@ -99,7 +99,7 @@ alias rgs='rvm gemset'
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTCONTROL="ignoreboth"
-export EDITOR="vim"
+export EDITOR="nano"
 
 ## Extract files: depends on zip, unrar and p7zip
 function ex {
@@ -123,3 +123,8 @@ function ex {
      fi
 }
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
